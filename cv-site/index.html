@@ -18,11 +18,21 @@
       <p>Baki şəhəri, Nizami rayonu, Keşlə qəsəbəsi, Pəhlivan Fərzəliyev 160</p>
       
       <h3>Education</h3>
-      <p>2024 - 2028<br />Azərbaycan Texniki Universiteti<br />İnformasiya təhlükəsizliyi</p>
-      <p>2024 - 2025<br />IKT lab təlim və tədris mərkəzi<br />İT Specialist</p>
+      <div id="education-section">
+        <p>2024 - 2028<br />Azərbaycan Texniki Universiteti<br />İnformasiya təhlükəsizliyi</p>
+        <p>2024 - 2025<br />IKT lab təlim və tədris mərkəzi<br />İT Specialist</p>
+      </div>
+      <button id="add-education-btn" class="add-btn">Yeni Təhsil Əlavə Et</button>
+      <div id="education-form" class="hidden">
+        <input type="text" id="edu-years" placeholder="İllər (məs: 2024-2028)" />
+        <input type="text" id="edu-school" placeholder="Təhsil müəssisəsi" />
+        <input type="text" id="edu-specialty" placeholder="İxtisas" />
+        <button id="save-education-btn" class="save-btn">Əlavə et</button>
+        <button id="cancel-education-btn" class="cancel-btn">Ləğv et</button>
+      </div>
       
       <h3>Skills</h3>
-      <ul>
+      <ul id="skills-section">
         <li>Əməliyyat Sistemləri və Proqram Təminatı</li>
         <li>Hardware və Troubleshooting</li>
         <li>Təhlükəsizlik və Məlumat Bərpası</li>
@@ -32,13 +42,25 @@
         <li>Şəbəkə bilikləri (başlanğıc səviyyə)</li>
         <li>Hireboot</li>
       </ul>
+      <button id="add-skill-btn" class="add-btn">Yeni Bacarıq Əlavə Et</button>
+      <div id="skill-form" class="hidden">
+        <input type="text" id="skill-input" placeholder="Bacarıq" />
+        <button id="save-skill-btn" class="save-btn">Əlavə et</button>
+        <button id="cancel-skill-btn" class="cancel-btn">Ləğv et</button>
+      </div>
       
       <h3>Languages</h3>
-      <ul>
+      <ul id="languages-section">
         <li>Azərbaycan dili (ana dili)</li>
         <li>English (technical)</li>
         <li>Russian (technical)</li>
       </ul>
+      <button id="add-language-btn" class="add-btn">Yeni Dil Əlavə Et</button>
+      <div id="language-form" class="hidden">
+        <input type="text" id="language-input" placeholder="Dil və səviyyə" />
+        <button id="save-language-btn" class="save-btn">Əlavə et</button>
+        <button id="cancel-language-btn" class="cancel-btn">Ləğv et</button>
+      </div>
     </div>
     
     <div class="main">
@@ -46,46 +68,71 @@
       <h2><b>IT Specialist</b></h2>
       
       <div class="section-title">Profile</div>
-      <p>İT sahəsində təhsil alan, texnologiyalara maraqlı və öyrənməyə həvəsli bir tələbəyəm. Praktiki bacarıqlarımı inkişaf etdirmək və real layihələrdə iştirak etmək üçün fürsətlər axtarıram. Komanda ilə işləmə və problemləri həll etmə bacarığım güclüdür.</p>
+      <p id="profile-text">
+        İT sahəsində təhsil alan, texnologiyalara maraqlı və öyrənməyə həvəsli bir tələbəyəm. Praktiki bacarıqlarımı inkişaf etdirmək və real layihələrdə iştirak etmək üçün fürsətlər axtarıram. Komanda ilə işləmə və problemləri həll etmə bacarığım güclüdür.
+      </p>
+      <button id="edit-profile-btn" class="add-btn">Profili Redaktə Et</button>
+      <div id="profile-form" class="hidden">
+        <textarea id="profile-input"></textarea>
+        <button id="save-profile-btn" class="save-btn">Yadda saxla</button>
+        <button id="cancel-profile-btn" class="cancel-btn">Ləğv et</button>
+      </div>
       
       <div class="section-title">Work Experience</div>
-      
-      <div class="job">
-        <h4>Faiqoglu MMC</h4>
-        <div class="job-period">İyun 2023 - İndiki zaman</div>
-        <ul>
-          <li>İT specialist vəzifəsində kompüter sistemlərinin və şəbəkənin idarə edilməsi</li>
-          <li>Texniki dəstək və problemlərin həlli</li>
-          <li>Avadanlıqların quraşdırılması və texniki xidməti</li>
-        </ul>
+      <div id="work-section">
+        <div class="job">
+          <h4>Faiqoglu MMC</h4>
+          <div class="job-period">İyun 2023 - İndiki zaman</div>
+          <ul>
+            <li>İT specialist vəzifəsində kompüter sistemlərinin və şəbəkənin idarə edilməsi</li>
+            <li>Texniki dəstək və problemlərin həlli</li>
+            <li>Avadanlıqların quraşdırılması və texniki xidməti</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h4>Ulduz şokalad fabriki</h4>
+          <div class="job-period">Yanvar 2022 - May 2023</div>
+          <ul>
+            <li>System Administrator kimi şirkətin IT infrastrukturunun idarə edilməsi</li>
+            <li>Server və şəbəkə təhlükəsizliyinin təmin edilməsi</li>
+            <li>Proqram təminatı və əməliyyat sistemlərinin yenilənməsi</li>
+          </ul>
+        </div>
+        <div class="job">
+          <h4>Bravo Market</h4>
+          <div class="job-period">May 2021 - Dekabr 2021</div>
+          <ul>
+            <li>Sistem infrastrukturunun qurulması və inkişafı</li>
+            <li>POS terminallarının və ödəmə sistemlərinin quraşdırılması</li>
+            <li>Şəbəkə avadanlıqlarının konfiqurasiyası və texniki xidməti</li>
+          </ul>
+        </div>
       </div>
-      
-      <div class="job">
-        <h4>Ulduz şokalad fabriki</h4>
-        <div class="job-period">Yanvar 2022 - May 2023</div>
-        <ul>
-          <li>System Administrator kimi şirkətin IT infrastrukturunun idarə edilməsi</li>
-          <li>Server və şəbəkə təhlükəsizliyinin təmin edilməsi</li>
-          <li>Proqram təminatı və əməliyyat sistemlərinin yenilənməsi</li>
-        </ul>
-      </div>
-      
-      <div class="job">
-        <h4>Bravo Market</h4>
-        <div class="job-period">May 2021 - Dekabr 2021</div>
-        <ul>
-          <li>Sistem infrastrukturunun qurulması və inkişafı</li>
-          <li>POS terminallarının və ödəmə sistemlərinin quraşdırılması</li>
-          <li>Şəbəkə avadanlıqlarının konfiqurasiyası və texniki xidməti</li>
-        </ul>
+      <button id="add-work-btn" class="add-btn">Yeni İş Əlavə Et</button>
+      <div id="work-form" class="hidden">
+        <input type="text" id="work-company" placeholder="Şirkət" />
+        <input type="text" id="work-period" placeholder="Dövriyyə (məs: 2022 - 2023)" />
+        <textarea id="work-description" placeholder="Vəzifə və iş təsviri"></textarea>
+        <button id="save-work-btn" class="save-btn">Əlavə et</button>
+        <button id="cancel-work-btn" class="cancel-btn">Ləğv et</button>
       </div>
       
       <div class="section-title">References</div>
-      
-      <div class="reference">
+      <div class="reference" id="reference-section">
         <p><strong>Cebiyev Kamil</strong><br />IT Manager, Faiqoglu MMC<br />20-ci sahe, 223<br />Tel: +994 50 211 12 99<br />faiqoglu.mmc@gmail.com</p>
+      </div>
+      <button id="add-reference-btn" class="add-btn">Yeni Referans Əlavə Et</button>
+      <div id="reference-form" class="hidden">
+        <input type="text" id="ref-name" placeholder="Ad və soyad" />
+        <input type="text" id="ref-position" placeholder="Vəzifə və şirkət" />
+        <input type="text" id="ref-address" placeholder="Ünvan" />
+        <input type="text" id="ref-phone" placeholder="Telefon" />
+        <input type="text" id="ref-email" placeholder="E-mail" />
+        <button id="save-reference-btn" class="save-btn">Əlavə et</button>
+        <button id="cancel-reference-btn" class="cancel-btn">Ləğv et</button>
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
