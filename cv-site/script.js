@@ -566,10 +566,27 @@ document.addEventListener("DOMContentLoaded", function() {
   if (resetBtn) {
     resetBtn.addEventListener('click', async function() {
       if (!confirm("Bütün dəyişikliklər silinəcək və məlumatlar JSON-dan yenidən yüklənəcək. Əminsiniz?")) return;
+      // Profil datasını sıfırla
       localStorage.removeItem(CV_STORAGE_KEY);
       cvData = structuredClone(defaultCV);
       saveCVToStorage();
       renderAll();
+
+      // FORM datasını da sıfırla
+      localStorage.removeItem(FORM_STORAGE_KEY);
+      if (typeof fields !== "undefined") {
+        for (const key in fields) {
+          fields[key].value = "";
+        }
+      }
+      if (typeof errors !== "undefined") {
+        for (const key in errors) {
+          errors[key].textContent = "";
+        }
+      }
+      if (typeof successMsg !== "undefined") {
+        successMsg.textContent = "";
+      }
     });
   }
 });
