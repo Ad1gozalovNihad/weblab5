@@ -1,0 +1,78 @@
+{
+  "name": "Nihad Adigozelov",
+  "title": "IT Specialist",
+  "profilePic": "images/helpdesk.png",
+  "contact": [
+    "+994 55 607 12 57",
+    "adigozelovnihad113@gmail.com",
+    "Baki şəhəri, Nizami rayonu, Keşlə qəsəbəsi, Pəhlivan Fərzəliyev 160"
+  ],
+  "education": [
+    {
+      "years": "2024 - 2028",
+      "school": "Azərbaycan Texniki Universiteti",
+      "major": "İnformasiya təhlükəsizliyi"
+    },
+    {
+      "years": "2024 - 2025",
+      "school": "IKT lab təlim və tədris mərkəzi",
+      "major": "İT Specialist"
+    }
+  ],
+  "skills": [
+    "Əməliyyat Sistemləri və Proqram Təminatı",
+    "Hardware və Troubleshooting",
+    "Təhlükəsizlik və Məlumat Bərpası",
+    "Şəbəkə və İnfrastruktur",
+    "Printer və skanerlərin quraşdırılması",
+    "Virtual maşınların qurulması",
+    "Şəbəkə bilikləri (başlanğıc səviyyə)",
+    "Hireboot"
+  ],
+  "languages": [
+    "Azərbaycan dili (ana dili)",
+    "English (technical)",
+    "Russian (technical)"
+  ],
+  "profile": [
+    "İT sahəsində təhsil alan, texnologiyalara maraqlı və öyrənməyə həvəsli bir tələbəyəm. Praktiki bacarıqlarımı inkişaf etdirmək və real layihələrdə iştirak etmək üçün daim öz üzərimdə çalışıram."
+  ],
+  "jobs": [
+    {
+      "company": "Faiqoglu MMC",
+      "period": "İyun 2023 - İndiki zaman",
+      "tasks": [
+        "İT specialist vəzifəsində kompüter sistemlərinin və şəbəkənin idarə edilməsi",
+        "Texniki dəstək və problemlərin həlli",
+        "Avadanlıqların quraşdırılması və texniki xidməti"
+      ]
+    },
+    {
+      "company": "Ulduz şokalad fabriki",
+      "period": "Yanvar 2022 - May 2023",
+      "tasks": [
+        "System Administrator kimi şirkətin IT infrastrukturunun idarə edilməsi",
+        "Server və şəbəkə təhlükəsizliyinin təmin edilməsi",
+        "Proqram təminatı və əməliyyat sistemlərinin yenilənməsi"
+      ]
+    },
+    {
+      "company": "Bravo Market",
+      "period": "May 2021 - Dekabr 2021",
+      "tasks": [
+        "Sistem infrastrukturunun qurulması və inkişafı",
+        "POS terminallarının və ödəmə sistemlərinin quraşdırılması",
+        "Şəbəkə avadanlıqlarının konfiqurasiyası və texniki xidməti"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Cebiyev Kamil",
+      "position": "IT Manager, Faiqoglu MMC",
+      "address": "20-ci sahe, 223",
+      "tel": "+994 50 211 12 99",
+      "email": "faiqoglu.mmc@gmail.com"
+    }
+  ]
+}
